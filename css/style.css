@@ -114,6 +114,11 @@ margin: 50px;
 .news {
     display: block;
     flex-direction: left;
+    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+/* width margin l and r are new */
     padding: 20px;
     border-radius: 5px;
     margin: 20px;
