@@ -380,14 +380,16 @@ border: 14px white solid;
 .listenPageBG {
     background-image: url("../assets/IMG_0410.jpg");
     background-size: cover;
+    background-color: black;
     width: 100vw;
     height: 100vh;
      right: 0; bottom: 0;
     min-width: 100%; min-height: 100%;
     margin-bottom: -10px;
-    width: auto; height: auto; z-index: -100;
+    width: 100%; height: auto; z-index: -100;
     background-size: cover;
 }
+
 
 .wrapAround {
     height: 100vh;
