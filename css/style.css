@@ -366,22 +366,6 @@ align-items: center;
 justify-content: center;
 }
 
-  /* .play { */
-    /* display: flex; */
-    /* margin: auto auto; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* float: left; */
-    /* width: 20%;
-    height: 60%;
-    min-height: 60%;
-    max-width: 20%;
-    display: flex;
-    margin-right: 20px;
-
-border: 14px white solid;
-  } */
-
 .listenPageBG {
     background-image: url("../assets/IMG_0410.jpg");
     background-size: cover;
@@ -395,63 +379,54 @@ border: 14px white solid;
     background-size: cover;
 }
 
-
 .wrapAround {
     height: 100vh;
     width: 100vw;
     display: flex;
     margin: auto auto;
-    align-items: center
-;
+    align-items: center;
     justify-content: left;
-    /* border: 10px solid green; */
-  /* border: 1px solid red; */
   }
 
- 
-
   .musicBox img {
-      backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     z-index: 1;
     border: 1px solid rgba(255, 255, 255, 0.623);
     background-color: rgba(255, 255, 255, 0.35);
-      float: left;
-      padding-top: 20px;
-      max-width: 100%;
-      padding-bottom: 20px;
-      padding-left: 70px;
-      padding-right: 70px;
-      border-radius: 10px;
-      width: 100%;
-      max-height: 100%;
-      /* height: 100; */
-      margin-bottom: 10px;
-      display: flex;
-      flex-direction: left;
-      justify-content: center;
+    float: left;
+    padding-top: 20px;
+    max-width: 100%;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: left;
+    justify-content: center;
     text-align: center;
     align-content: center;
 
   }
 
   iframe {
-    /* border: 3px solid yellow; */
     margin-right: 20px;
     margin-left: 50px;
     height: 50vh;
     display: flex;
   }
 
- 
-
   #status{
-      width: 90%;
-      max-width: 500px;
-      text-align: center;
-      padding: 10px;
-      margin: 0 auto; 
-      border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto; 
+    border-radius: 8px;
   }
+
   #status.success{
       background-color: green;
   }
@@ -463,10 +438,10 @@ border: 14px white solid;
   .bio {
     color: white;
     border: 1px white solid;
-   background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     padding: 20px;
-   margin-top: 50px;
+    margin-top: 50px;
     margin-bottom: 30vh;
     width: 80vw;
     height: 80vh;
@@ -474,29 +449,27 @@ border: 14px white solid;
     margin-left: auto;
     margin-right: auto;
     backdrop-filter: blur(5px);
-
   }
 
   #mc_embed_signup{
-      background:rgb(29, 10, 10);  
-      padding: 20px;
-      width: 30vw;
-      font-size: 12px;
-      text-align: center;
-      justify-content: center;
-  display: flex;
+    background:rgb(29, 10, 10);  
+    padding: 20px;
+    width: 30vw;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
     }
-    
 
-    .containsBio {
-        background: url("../assets/IMG_0464.jpg");
-        right: 0; bottom: 0;
-        height: 100%;
-        min-width: 100%; min-height: 100%;
-        width: 100vw; height: auto; z-index: -100;
-        background-size: cover;
-        padding: 20px;
-        margin-bottom: -10px;
+  .containsBio {
+    background: url("../assets/IMG_0464.jpg");
+    right: 0; bottom: 0;
+    height: 100%;
+    min-width: 100%; min-height: 100%;
+    width: 100vw; height: auto; z-index: -100;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: -10px;
     }
 
     #mc_embed_signup input {
@@ -509,13 +482,8 @@ border: 14px white solid;
         margin-top: 15px;
         display: flex;
         background-color: black;
-
-        /* float: left; */
-
-        /* note to self fix margins around  */
         position: fixed;
         bottom: 0;
-
     }
     
 .foot {
