@@ -223,9 +223,15 @@ video {
   background-color: black;
 }
 
-.fa {
+/* .fa {
     font-size: 35px;
     margin: 20px;
+} */
+
+.fa {
+  margin: 10px;
+  font-size: 35px;
+
 }
 
 .faBig {
