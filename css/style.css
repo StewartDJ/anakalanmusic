@@ -9,7 +9,9 @@
   }
 
 body::-webkit-scrollbar {
-    width: 3px;
+    width: 10px;
+   background-color: rgb(233, 162, 8);
+
   }
    
   body::-webkit-scrollbar-track {
