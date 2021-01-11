@@ -225,6 +225,17 @@ video {
   background-color: black;
 }
 
+
+.videoReplacement {
+  background-image: url("../assets/IMG_0040.png");
+  position: fixed; 
+  background-position: 75% 50%;
+  min-width: 100vw; min-height: 100%;
+  width: 100%; height: auto; z-index: -100;
+  background-size: cover;
+  background-color: black;
+}
+
 /* .fa {
     font-size: 35px;
     margin: 20px;
@@ -467,7 +478,7 @@ justify-content: center;
         margin-top: 15px;
         display: flex;
         background-color: black;
-        position: fixed;
+        /* position: fixed; */
         bottom: 0;
     }
     
