@@ -1,161 +1,224 @@
+// Edit these values to update colors on website
+$Edit-Primary-Color: rgb(233, 162, 8);
+$Edit-Secondary-Color: Black;
+$Footer-Subscribe-Color: rgb(29, 10, 10);
+$Border-Color: white;
+$Font-Color: white;
+$Listen-Button: rgba(255, 255, 255, 0.25);
+$Listen-Button-Font: white;
+$Navbar-Color: rgb(233, 162, 8);
+$Navbar-Shadow: rgb(29, 10, 10);
+$Menu-Overlay-Color: rgba(0, 0, 0, 0.9);
+// STOP HERE, do not edit unless specified
+
+// GENERAL SETTINGS AFFECTING ALL PAGES
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.news::-webkit-scrollbar {
-    width: 3px;
-  }
-
+// this affects the scrollbar on the righthand side of every page
 body::-webkit-scrollbar {
-    width: 3px;
-  }
-   
-  body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px  rgb(233, 162, 8);
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: black;
-    outline: 1px solid  rgb(233, 162, 8);
-  }
+  width: 10px;
+  background-color: $Edit-Primary-Color;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px $Edit-Primary-Color;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $Edit-Secondary-Color;
+  outline: 1px solid $Edit-Primary-Color;
+}
+//here is where the scrollbar code ends
+
+body {
+  margin: 0px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  color: $Font-Color;
+  font-size: 20px;
+}
 
 hr {
-    color: white;
-}
-
-.topPage {
-height: 100vh;
-display: flex;
-justify-content: center;
-}
-
-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.containerContact {
-    width: 90%;
-    max-width: 500px;
-display: flex;
-justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20vh;
-    margin-top: -10vh;
-    padding: 40px;
-    box-shadow: 0px 0px 20px black;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 50px;
-    border: 3px solid white;
-    backdrop-filter: blur(5px);
-}
-
-.form-group {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 20px;
-    color: white;
-    input, textarea {
-    width: 100%;
-    padding: 5px;
-    font-size: 18px;
-    margin-top: 5px;
-}
-}
-
-
-
-textarea {
-    resize: none;
-}
-
-button[type="submit"]{
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 20px;
-    font-size: 24px;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    margin-top: 10px;
+  background-color: $Border-Color;
+  color: $Border-Color;
 }
 
 .btn-warning {
-    background-color: rgb(233, 162, 8);
+  background-color: $Edit-Primary-Color;
 }
 
-.h2 {
-margin: 50px;
+h1 {
+  text-shadow: 3px 3px 5px $Edit-Secondary-Color;
 }
+
+// .h2 {
+// margin: 50px;
+// }
+// GENERAL END
+
+.topPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+// CONTACT ME PAGE CODE START
+
+.backgroundImgStatic {
+  background-image: url("../assets/IMG_0049.png");
+  //  right: 0; bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  // margin-bottom: -10px;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .containerContact {
+//   width: 90%;
+//   max-width: 500px;
+//   display: flex;
+//   // justify-content: center;
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   // margin-bottom: 20vh;
+//   // margin-top: 500px;
+//   // padding: 40px;
+//   box-shadow: 0px 0px 20px $Edit-Secondary-Color;
+//   background-color: rgba(255, 255, 255, 0.05);
+//   border-radius: 50px;
+//   // border: 3px solid $Border-Color;
+//   backdrop-filter: blur(5px);
+// }
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: $Edit-Secondary-Color;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+//CONTACT ME CODE END
+
+//LISTEN PAGE CODE START
 
 .box {
-  background-color: white;
+  background-color: $Border-Color;
   width: 500px;
   height: 500px;
   margin: auto auto;
   display: flex;
 }
+// LISTEN PAGE CODE END
+
+// NAVBAR CODE START (Note, affects all pages)
 
 .navbar {
-    width: 100%;
-    height: 5vh;
+  width: 100%;
+  height: 5vh;
 }
 
-.listenNow {
-    margin-top: 50vh;
+//NAVBAR CODE END
+
+//HOME PAGE CODE START
+// .listenNow {
+//   background-color: blue;
+//   margin-left: auto;
+//   width: 40%;
+//   margin-right: auto;
+//   margin-top: 50vh;
+//   justify-content: center;
+//   // margin-top: 50vh;
+//   a {
+//     color: $Listen-Button-Font;
+//   }
+// }
+
+//HOME PAGE CODE END
+
+//NEWS SECTION CODE START
+
+.news::-webkit-scrollbar {
+  width: 3px;
 }
 
 .news {
-    display: block;
-    flex-direction: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px;
-    float: left;
+  display: block;
+  flex-direction: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  float: left;
 }
 
 .news-group {
-    margin: 20px;
-   border-radius: 40px;
-   background-color: black;
-   padding-left: 40px;
-   padding-right: 40px;
-   padding-bottom: 40px;
-   padding-top: 40px;
-   margin: 50px;
-   display: block;
-   z-index: -1;
-   max-height: 100%;
-   float: left;
-   border: 1px rgb(233, 162, 8) solid;
-   width: 100%;
+  margin: 20px;
+  border-radius: 40px;
+  background-color: $Edit-Secondary-Color;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin: 50px;
+  display: block;
+  z-index: -1;
+  max-height: 100%;
+  float: left;
+  border: 1px $Edit-Primary-Color solid;
+  width: 100%;
 }
 
-h1 {
-    text-shadow: 1px 1px 5px black;
+.newsgroup h1 {
+  float: left;
 }
 
-.newsgroup h1 { 
-    float: left;
-}
-
-.photograph {
-    img{
- overflow: hidden;
- float: left;
- width: 20vw;
-  border-radius: 20PX;
-  border: 2px solid white;
+.photograph img {
+  overflow: hidden;
+  float: left;
+  width: 20vw;
+  border-radius: 20px;
+  border: 2px solid $Border-Color;
   margin-top: -80px;
   margin-left: -100px;
   margin-right: 40px;
@@ -166,143 +229,154 @@ h1 {
   height: 20%;
   overflow-y: hidden;
 }
-}
-
-hr {
-    background-color: white;
-    color: white;
-}
 
 .news-group-end {
-    margin: 20px;
-    margin-bottom: 30vh;
-    padding: 20px;
-    text-align: center;
-    color: black;
-    width: 100%;
-   border-radius: 40px;
-   background-color: rgba(233, 162, 8,  0.7);
-   float: left;
-
+  margin: 20px;
+  margin-bottom: 30vh;
+  padding: 20px;
+  text-align: center;
+  color: $Edit-Secondary-Color;
+  width: 100%;
+  border-radius: 40px;
+  background-color: rgba(233, 162, 8, 0.7);
+  float: left;
 }
 
-.container {
-margin: auto auto;
-height: 200vh;
-width: 100vw;
-padding: auto auto;
-}
-
-body {
-    margin: 0px;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-size: 20px;
-    
-}
-
-.backgroundImgStatic {
-    background-image: url("../assets/IMG_0049.png");
-     right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background-size: cover;
-    margin-bottom: -10px;
-}
+//NEWS SECTION CODE END
 
 .nameTitle {
-font-size: 5vw;
-justify-content: center;
-align-content: center;
-} 
-
-video {
-  position: fixed; 
-  min-width: 100vw; min-height: 100%;
-  width: 100%; height: auto; z-index: -100;
-  background-size: cover;
-  background-color: black;
+  font-size: 5vh;
+  justify-content: center;
+  align-content: center;
 }
 
+video {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  background-color: $Edit-Secondary-Color;
+}
+
+.videoReplacement {
+  background-image: url("../assets/albumcover.jpg");
+  position: fixed;
+  background-position: 75% 50%;
+  min-width: 100vw;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  background-color: $Edit-Secondary-Color;
+}
+
+/* .fa {
+  font-size: 35px;
+  margin: 20px;
+} */
+
 .fa {
-    font-size: 35px;
-    margin: 20px;
+  margin: 20px;
+  font-size: 35px;
+  color: $Font-Color;
+}
+
+.faNav {
+  color: $Navbar-Color;
+  text-shadow: 1px 1px $Navbar-Shadow;
 }
 
 .faBig {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 /* unvisited link */
 a:link {
-    color: white;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: white;
-  }
-  
- 
-  /* selected link */
-  a:active {
-    color: white;
-    text-decoration: none;
+  color: $Font-Color;
+}
 
-  }
+/* visited link */
+a:visited {
+  color: $Font-Color;
+}
 
-a :hover{
-    color: grey;
-    text-decoration: none;
+/* selected link */
+a:active {
+  color: $Font-Color;
+  text-decoration: none;
+}
+
+a :hover {
+  color: grey;
+  text-decoration: none;
 }
 
 .menu {
-font-size: 35px;
+  font-size: 35px;
 }
 
+.containerHome {
+  width: 100%;
+  height: 95vh;
+  padding: auto auto;
+  justify-content: center;
+  padding-top: 40vh;
+  // margin: auto auto;
+  // background-color: blue;
+  // justify-content: center;
+  // width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
+  // padding: auto auto;
+}
 .bttn {
-    border: 2px solid white;
-    background-color: rgba(255,255,255, 0.25);
-    border-radius: 10px;
-    color: white; 
-    box-shadow: 1px 1px 10px black;
-    font-size: 70px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    width: 30vw;
-    height: 130px;
-    margin: auto auto;
-    padding: 20px;
-    font-family: 'Amatic SC', cursive;
-    font-weight: 400;
-    height: 20px;
+  display: block;
+  // margin-top: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: 2px solid $Listen-Button-Font;
+  width: 30vw;
+  min-width: 30vw;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  color: $Listen-Button-Font;
+  box-shadow: 1px 1px 10px $Edit-Secondary-Color;
+  font-size: 50px;
+  backdrop-filter: blur(20px);
+  justify-content: center;
+  -webkit-backdrop-filter: blur(20px);
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
 }
 
+// NAVBAR CODE START
+.socials {
+  display: flex;
+}
+
+//NAVBAR CODE END
+
+//MENU EXPANDED CODE START
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $Menu-Overlay-Color;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -310,166 +384,192 @@ font-size: 35px;
     display: block;
     transition: 0.3s;
   }
-  
-  .overlay a:hover, .overlay a:focus {
+
+  a:hover,
+  a:focus {
     color: #f1f1f1;
   }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
+  .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
-    }
   }
+}
+// MENU EXPANDED CODE END
 
-  .socials {
-      display: flex;
-  }
+// LISTEN PAGE CODE STARTS HERE
+
+.listenPageBG {
+  background-image: url("../assets/IMG_0410.jpg");
+  background-size: cover;
+  background-color: $Edit-Secondary-Color;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin-bottom: -10px;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
 
 .listenContainer {
   margin: 20px;
   height: 50vh;
-max-width: 20%;
-align-items: center;
-justify-content: center;
-}
-
-.listenPageBG {
-    background-image: url("../assets/IMG_0410.jpg");
-    background-size: cover;
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-     right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    margin-bottom: -10px;
-    width: 100%; height: auto; z-index: -100;
-    background-size: cover;
+  max-width: 20%;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapAround {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    margin: auto auto;
-    align-items: center;
-    justify-content: left;
-  }
-
-  .musicBox {
-img {
-    backdrop-filter: blur(5px);
-    z-index: 1;
-    border: 1px solid rgba(255, 255, 255, 0.623);
-    background-color: rgba(255, 255, 255, 0.35);
-    float: left;
-    padding-top: 20px;
-    max-width: 100%;
-    padding-bottom: 20px;
-    padding-left: 70px;
-    padding-right: 70px;
-    border-radius: 10px;
-    width: 100%;
-    max-height: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: left;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: auto auto;
+  align-items: center;
+  justify-content: left;
 }
 
-  iframe {
-    margin-right: 20px;
-    margin-left: 50px;
-    height: 50vh;
-    display: flex;
-  }
+.musicBox img {
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.623);
+  background-color: rgba(255, 255, 255, 0.35);
+  float: left;
+  padding-top: 20px;
+  max-width: 100%;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: left;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
 
-  #status{
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto; 
-    border-radius: 8px;
-    .success{
-        background-color: green;
-    }
-    .error{
-        background-color: red;
-  }
-  }
+iframe {
+  margin-right: 20px;
+  margin-left: 50px;
+  height: 50vh;
+  display: flex;
+}
 
-  .bio {
-    color: white;
-    border: 1px white solid;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 30vh;
-    width: 80vw;
-    height: 80vh;
-    overflow-y: scroll;
-    margin-left: auto;
-    margin-right: auto;
-    backdrop-filter: blur(5px);
-  }
+// LISTEN PAGE CODE ENDS HERE
 
-  #mc_embed_signup{
-    background:rgb(29, 10, 10);  
-    padding: 20px;
-    width: 30vw;
-    font-size: 12px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    input {
-        height: 2%;
-        margin: 10px;
-      }
-    }
+// FOOTER CODE STARTS HERE
+.bottomPage {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  background-color: $Edit-Secondary-Color;
+  /* position: fixed; */
+  bottom: 0;
+}
 
-  .containsBio {
-    background: url("../assets/IMG_0464.jpg");
-    right: 0; bottom: 0;
-    height: 100%;
-    min-width: 100%; min-height: 100%;
-    width: 100vw; height: auto; z-index: -100;
-    background-size: cover;
-    padding: 20px;
-    margin-bottom: -10px;
-    }
-
-  
-    .bottomPage {
-        width: 100%;
-        margin-top: 15px;
-        display: flex;
-        background-color: black;
-        position: fixed;
-        bottom: 0;
-    }
-    
 .foot {
-    background-color: black;
-    height: 100%;
-    margin-right: -20;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+  background-color: $Edit-Secondary-Color;
+  height: 100%;
+  margin-right: -20;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
+#mc_embed_signup {
+  background: $Footer-Subscribe-Color;
+  padding: 20px;
+  width: 30vw;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+#mc_embed_signup input {
+  height: 2%;
+  margin: 10px;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: green;
+}
+
+#status.error {
+  background-color: rgb(163, 122, 122);
+}
+
+// FOOTER CODE ENDS HERE
+
+// ABOUT ME CODE STARTS HERE
+
+.containsBio {
+  background: url("../assets/IMG_0464.jpg");
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  padding: 20px;
+  margin-bottom: -10px;
+}
+
+.bio {
+  color: $Font-Color;
+  border: 1px $Border-Color solid;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 30vh;
+  width: 80vw;
+  height: 80vh;
+  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(5px);
+}
+// ABOUT ME CODE ENDS HERE
