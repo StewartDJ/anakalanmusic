@@ -472,7 +472,7 @@ iframe {
 #mc_embed_signup {
   background: #1d0a0a;
   padding: 20px;
-  width: 30vw;
+  width: 100%;
   font-size: 12px;
   text-align: center;
   -webkit-box-pack: center;
