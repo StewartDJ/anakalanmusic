@@ -183,7 +183,7 @@ button[type="submit"] {
 .news {
   display: block;
   flex-direction: left;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -574,15 +574,16 @@ iframe {
 }
 // ABOUT ME CODE ENDS HERE
 
-.container {
-  background-color: red;
-}
+// .containerNews {
+//   background-color: red;
+//   width: 80vw;
+//   height: 100vh;
+
+// }
 
 .card-body {
-  color: black;
+  color: white;
   background-color: black;
   border: 2px 2px 5px yellow;
 }
 
-.card {
-}
