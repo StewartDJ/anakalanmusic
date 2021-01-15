@@ -495,19 +495,27 @@ iframe {
 // LISTEN PAGE CODE ENDS HERE
 
 // FOOTER CODE STARTS HERE
+// .bottomPage {
+//   width: 100vw;
+//   margin-top: 15px;
+//   display: flex;
+//   background-color: $Edit-Secondary-Color;
+//   /* position: fixed; */
+//   bottom: 0;
+// }
+
 .bottomPage {
-  width: 100vw;
-  margin-top: 15px;
   display: flex;
-  background-color: $Edit-Secondary-Color;
-  /* position: fixed; */
   bottom: 0;
+  width: 100vw;
+  height: 28vh;
+
 }
 
 .foot {
   flex: 5;
   background-color: $Edit-Secondary-Color;
-  height: 100%;
+  
   margin-right: -20;
   font-size: 20px;
   text-align: center;
@@ -521,6 +529,7 @@ iframe {
   background: $Footer-Subscribe-Color;
   padding: 20px;
   width: 100vw;
+  height: 100%;
   font-size: 12px;
   text-align: center;
   justify-content: center;
