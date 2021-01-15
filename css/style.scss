@@ -505,30 +505,38 @@ iframe {
 // }
 
 .bottomPage {
-  display: flex;
-  bottom: 0;
-  width: 100vw;
-  height: 28vh;
+  // display: flex;
+  // bottom: 0;
+  // width: 100vw;
+  // height: 28%;
+  display: table;
+  width: 100%;
+
 
 }
 
 .foot {
+  display: table-cell;
   flex: 5;
+  resize: both;
   background-color: $Edit-Secondary-Color;
-  
+  flex-shrink: 3;
   margin-right: -20;
   font-size: 20px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   max-width: 100vw;
   height: 100%;
   padding: 10px;
 }
 
 #mc_embed_signup {
+  display: table-cell;
   background: $Footer-Subscribe-Color;
+  resize: both;
+
   padding: 20px;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   font-size: 12px;
   text-align: center;
