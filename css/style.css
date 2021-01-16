@@ -22,8 +22,8 @@ body::-webkit-scrollbar-thumb {
 
 body {
   margin: 0px;
-  width: auto;
-  max-width: 100vw;
+  width: 100vw;
+  max-width: 100%;
   font-family: "Quicksand", sans-serif;
   color: white;
   font-size: 20px;
@@ -75,6 +75,20 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.containerContact {
+  width: 90%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 20px Black;
+          box-shadow: 0px 0px 20px Black;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .form-group {
@@ -219,7 +233,6 @@ video {
 .videoReplacement {
   background-image: url("../assets/albumcover.jpg");
   position: fixed;
-  background-position: 75% 50%;
   min-width: 100vw;
   min-height: 100%;
   width: 100vw;
