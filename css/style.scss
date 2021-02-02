@@ -184,7 +184,7 @@ button[type="submit"] {
 
 .news {
   display: block;
-  background-color: red;
+  // background-color: red;
   flex-direction: left;
   justify-content: center;
   width: auto;
@@ -506,7 +506,7 @@ iframe {
 .bottomPage {
   width: 100%;
   height: 320px;
-  border: yellow 1px solid;
+  // border: yellow 1px solid;
   float: left;
   display: block;
   background-color: black;
@@ -538,6 +538,10 @@ iframe {
   .fontSize {
     font-size: 55%;
     word-wrap: break-word;
+  }
+
+  h5 {
+    text-transform: uppercase;
   }
 }
 
@@ -632,7 +636,7 @@ iframe {
 // ABOUT ME CODE ENDS HERE
 
 .containerNews {
-  background-color: blue;
+  // background-color: blue;
   padding: auto auto;
   width: 100vw;
   height: 100%;
@@ -642,4 +646,9 @@ iframe {
   color: white;
   background-color: black;
   border: 5px 5px 5px yellow;
+}
+
+.card {
+  margin: 20px;
+  width: 50%;
 }
