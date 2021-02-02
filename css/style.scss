@@ -198,7 +198,6 @@ button[type="submit"] {
   float: left;
 }
 
-
 .news-group {
   margin: 20px;
   border-radius: 40px;
@@ -273,7 +272,7 @@ video {
 .videoReplacement {
   background-image: url("../assets/albumcover.jpg");
   position: fixed;
-  // background-position: 75% 50%;
+  background-position: center center;
   min-width: 100vw;
   min-height: 100%;
   width: 100vw;
@@ -299,11 +298,19 @@ video {
   text-shadow: 1px 1px $Navbar-Shadow;
 }
 
+// .faBig {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-bottom: 20px;
+//   font-size: 25px;
+// }
+
 .faBig {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-  font-size: 25px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  // margin-bottom: 20px;
+  font-size: 1vw;
+  flex-wrap: wrap;
 }
 
 /* unvisited link */
@@ -495,57 +502,79 @@ iframe {
 // LISTEN PAGE CODE ENDS HERE
 
 // FOOTER CODE STARTS HERE
-// .bottomPage {
-//   width: 100vw;
-//   margin-top: 15px;
-//   display: flex;
-//   background-color: $Edit-Secondary-Color;
-//   /* position: fixed; */
-//   bottom: 0;
-// }
 
 .bottomPage {
-  // display: flex;
-  // bottom: 0;
-  // width: 100vw;
-  // height: 28%;
-  display: table;
   width: 100%;
-
-
+  height: 320px;
+  border: yellow 1px solid;
+  float: left;
+  display: block;
+  background-color: black;
 }
 
-.foot {
-  display: table-cell;
-  flex: 5;
-  resize: both;
-  background-color: $Edit-Secondary-Color;
-  flex-shrink: 3;
-  margin-right: -20;
-  font-size: 20px;
-  text-align: center;
-  width: 100%;
-  max-width: 100vw;
-  height: 100%;
+.bottomPageLeft {
+  // background-color: green;
+  // height: 100%;
+  width: 55%;
+  float: left;
+  // border: 5px solid orange;
   padding: 10px;
+  display: table;
+  justify-content: center;
+
+  // text-align: center;
+}
+.foot {
+  width: 100%;
+  height: 100%;
+  // background-color: blue;
+  margin: auto;
+  text-align: center;
+
+  .fa {
+    font-size: 1rem;
+  }
+
+  .fontSize {
+    font-size: 55%;
+    word-wrap: break-word;
+  }
+}
+
+.bottomPageRight {
+  background-color: purple;
+  width: 45%;
+  height: 100%;
+  // display: inline-block;
+  float: left;
 }
 
 #mc_embed_signup {
-  display: table-cell;
   background: $Footer-Subscribe-Color;
-  resize: both;
-  padding: 20px;
-  width: 100%;
   height: 100%;
-  font-size: 12px;
   text-align: center;
-  justify-content: center;
-  flex: 1;
+  h5 {
+    padding: 10px;
+  }
+}
+
+.mc-field-group {
+  display: table;
+  width: 100%;
+  label {
+    display: table-cell;
+    width: 5px;
+  }
+  input {
+    display: table-cell;
+    width: 80%;
+  }
 }
 
 #mc_embed_signup input {
-  height: 2%;
-  margin: 10px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #status {
@@ -599,14 +628,14 @@ iframe {
   margin-right: auto;
   backdrop-filter: blur(5px);
 }
+
 // ABOUT ME CODE ENDS HERE
 
 .containerNews {
-  background-color:blue;
+  background-color: blue;
   padding: auto auto;
   width: 100vw;
   height: 100%;
-
 }
 
 .card-body {
@@ -614,4 +643,3 @@ iframe {
   background-color: black;
   border: 5px 5px 5px yellow;
 }
-
