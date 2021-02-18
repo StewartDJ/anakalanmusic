@@ -154,5 +154,25 @@ Three years later is where I am now. A Slovenian musician, actor, writer and dra
 <!-- Link to my Javascript-->
 <script src ='./js/app.js'></script> 
 
+<script> 
+    var sWidth; 
+    sWidth = window.screen.width; 
+    console.log("The Screen Width is " + sWidth + " pixels");
+    
+    if (sWidth > 800) {
+        document.getElementById("indexBackground").innerHTML = `<div class= "fullscreen-video-wrap" >
+                    <video autoplay loop playsinline muted src="./assets/Your Soul video for website.mp4" poster="./assets/IMG_0109.jpg" > </video>
+                </div>`
+    }
+    
+    else {
+        document.getElementById("indexBackground").innerHTML= `<div class="videoReplacement"></div>`
+    }
+    
+    
+    
+    </script>
+
+
 </body>
 </html>

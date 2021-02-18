@@ -12,7 +12,23 @@
     <title>Contact</title>
 </head>
 <body>
-    <div class="backgroundImgStatic">
+   
+        <div id="mobileResponse">  
+
+</div>
+
+
+<!-- Link to my Javascript-->
+<script src ='./js/app.js'></script>
+
+<script> 
+    var sWidth; 
+    sWidth = window.screen.width; 
+    console.log("The Screen Width is " + sWidth + " pixels");
+    
+    if (sWidth > 800) {
+        document.getElementById("mobileResponse").innerHTML = `  
+        <div class="backgroundImgStatic">
         <nav class="navbar navbar-expand-sm" style=" width:100%; height: auto">
             <div class="socials"> 
                <a href="https://twitter.com/anakalanmusic" target="_blank"><i class="fa fa-twitter faNav"></i></a>
@@ -72,10 +88,7 @@
     </form>
 <br>
 
-</div>
-
-</section>
-</div>
+</div> 
 
 <div class="bottomPage">
     <div class="bottomPageLeft">
@@ -134,9 +147,137 @@
 </div>
 </div>
 
+</div>`
+    }
+    
+    else {
+        document.getElementById("mobileResponse").innerHTML= `<div class="backgroundImgMobile">
+     
+        <nav class="navbar navbar-expand-sm" style=" width:100%; height: auto">
+            <div class="socials"> 
+               <a href="https://twitter.com/anakalanmusic" target="_blank"><i class="fa fa-twitter faNav"></i></a>
+               <a href="https://www.instagram.com/nusakalanj" target="_blank"><i class="fa fa-instagram faNav"></i></a>
+               <a href="https://www.facebook.com/anakalanmusic" target="_blank"><i class="fa fa-facebook faNav"></i></a>
+           </div>
+                                  
+           <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="openNav()" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span><i class="fa fa-ellipsis-h faNav"></i>
+           </button>
+                             
+           <div class="collapse navbar-collapse nameTitle faNav"id="navbarSupportedContent">ANA KALAN</div>
+       
+               <div id="myNav" class="overlay"> 
+       
+               <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                             
+                       <!-- Overlay content -->
+                           <div class="overlay-content">
+                               <a href="index.html">HOME</a>
+                               <a href="index.html#newsTop"><div onclick="closeNav()">NEWS</div></a>
+                               <a href="about.html">ABOUT ME</a>
+                               <a href="contact.html">CONTACT</a>
+                           </div>         
+               </div>               
+                       <!-- Use any element to open/show the overlay navigation menu -->
+           <span onclick="openNav()">
+               <div class="collapse navbar-collapse menu faNav" id="navbarSupportedContent"> 
+                   MENU <i class="fa fa-ellipsis-h faNav"></i>
+               </div>
+           </span>                                         
+       </nav>
+    
+<div class="containerContactTwo">
+    
+   <form action="https://formspree.io/f/xgeppvyk" method="POST">
+     <center> <h1>Contact Me</h1> </center>
+        <div class="form-group">
+            <label for ="name"> Name </label>
+            <input type="text" id="name" name="name" required>
+        </div>    
+   
+        <div class="form-group">
+            <label for ="email"> Email </label>
+            <input type="text" id="email" name="email" placeholder="email@example.com" required>
+        </div>    
+    
+        <div class="form-group">
+            <label for ="message"> Message </label>
+            <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+        </div>    
+
+        <button type="submit" class="btn-warning"> Submit </button>
+    
+    
+    </form>
+<br>
+<br>
 </div>
-<!-- Link to my Javascript-->
-<script src ='./js/app.js'></script>
+
+<div class="bottomPage">
+    <div class="bottomPageLeft">
+
+        <div class="foot">
+           <h5 class="tableCell">Follow Me On Social Media: </h5>        
+           <div class="tableCell">
+            <a href="https://open.spotify.com/artist/7rBaiw1Mp8ptlpFWw6HVdw?fbclid=IwAR1FvL0xORvP26cqcXx7BvGIEkndBW7H-mI5Hu_106mgA1thmCPqWd0o7Yw" target="_blank"><i class="fa faBig fa-spotify"></i></a>
+    
+            <a href="https://youtube.com/user/ToBeaRoccknNotToRoll" target="_blank"><i class="fa faBig fa-youtube"></i></a>
+    
+            <a href="https://twitter.com/anakalanmusic" target="_blank"><i class="fa faBig fa-twitter"></i></a>
+    
+            <a href="https://www.instagram.com/nusakalanj" target="_blank"><i class="fa faBig fa-instagram"></i></a>
+            
+            <a href="https://www.facebook.com/anakalanmusic" target="_blank"><i class="fa faBig fa-facebook"></i></a>
+        </div>
+        <hr>
+        <div class="tableCell fontSize">Business Inquiries Contact:</div> 
+
+                <div class="tableCell fontSize">anakalanmusic@gmail.com</div> 
+        </div>
+    </div>
+    <div class="bottomPageRight">
+         <div id="mc_embed_signup"> 
+        <form action="https://gmail.us7.list-manage.com/subscribe/post?u=954b64aad04c70518fa77d54f&amp;id=44272fece7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <h5>SUBSCRIBE TO MY NEWSLETTER </h5> 
+       
+         <div class="mc-field-group">
+            <label for="mce-EMAIL"> <span class="asterisk"></span>
+        </label>
+            <input type="email" placeholder="Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        
+            <br>
+    
+           
+            <input type="text" value="" placeholder="First Name" name="FNAME" class="" id="mce-FNAME">
+        
+    <br>
+        
+            <input type="text" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
+       
+            <br>
+        
+                    
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            <!-- </div>    real people should not fill this in and expect good things - do not remove this or risk form bot signups  -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_954b64aad04c70518fa77d54f_44272fece7" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-warning"></div>
+            </div>
+        </form>
+</div>
+</div>
+</div>
+</div>
+
+
+`
+    }
+    
+    </script>
+    
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
