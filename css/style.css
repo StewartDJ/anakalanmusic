@@ -28,6 +28,7 @@ body {
   color: white;
   font-size: 20px;
   overflow-x: hidden;
+  background-color: black;
 }
 
 hr {
@@ -262,14 +263,14 @@ button[type="submit"] {
 }
 
 video {
-  top: 0;
   position: fixed;
   min-width: 100vw;
   min-height: 100%;
   width: 100vw;
   height: auto;
   z-index: -100;
-  background-size: inherit;
+  background-size: cover;
+  background-color: Black;
 }
 
 .videoReplacement {
